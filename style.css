@@ -77,8 +77,34 @@ ul  { list-style: none; }
   transition: width .38s var(--ease), height .38s var(--ease), border-color .25s ease;
   will-change: transform;
 }
-body.cursor-hover .cursor       { width: 6px; height: 6px; background: #fff; }
-body.cursor-hover .cursor-ring  { width: 48px; height: 48px; border-color: var(--teal); }
+
+/* 1. 중앙 점: 항상 흰색 빛 */
+.cursor {
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  box-shadow: 0 0 10px #fff;
+  position: fixed; /* 마우스를 따라다니게 고정 */
+  pointer-events: none; /* 클릭 방해 금지 */
+  z-index: 9999;
+}
+
+/* 2. 바깥쪽 별: 항상 별 모양 */
+.cursor-ring {
+  width: 50px;
+  height: 50px;
+  background: var(--teal); 
+  
+  /* 별 모양 만들기 */
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.8;
+  transition: transform 0.1s ease-out; /* 움직임 부드럽게 */
+}
+
 
 /* ── INTERSECTION OBSERVER 기본 숨김 ───────────────────────── */
 .fade-up, .sol-card, .pain-card,
