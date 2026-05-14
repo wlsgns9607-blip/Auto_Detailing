@@ -559,19 +559,47 @@ nav:not(.arch-bar) > * { flex-shrink: 0; }
   background: var(--teal-soft);
   box-shadow: 0 18px 44px rgba(0,0,0,.44);
 }
+
+
+/* 페르소나 이야기 */
 .persona-avatar {
   flex-shrink: 0;
-  width: 48px; height: 48px;
-  border-radius: 50%;
+
+  width: 200px;
+  height: 48px;
+
+  border-radius: 999px;
+
   background: linear-gradient(135deg, var(--teal), var(--blue));
+
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.10rem; font-weight: 800;
+
+  padding: 0 12px;
+
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1;
+
   color: #071a14;
-  box-shadow: 0 4px 14px rgba(19,184,159,.35);
-  transition: transform .30s var(--bounce), box-shadow .30s ease;
+
+  box-shadow: 0 2px 8px rgba(19, 184, 159, 0.25);
+
+  transition: transform .30s var(--bounce),
+              box-shadow .30s ease;
 }
+
+/* hover 효과 */
+.persona-avatar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(19, 184, 159, 0.35);
+}
+
+/*------------- 페르소나 이야기 끝 ----------------*/
+
+
+
 .persona-card:hover .persona-avatar {
   transform: scale(1.14) rotate(-5deg);
   box-shadow: 0 8px 26px rgba(19,184,159,.52);
