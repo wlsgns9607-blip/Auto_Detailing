@@ -225,7 +225,8 @@ nav:not(.arch-bar) > * { flex-shrink: 0; }
    HERO  (배경 #3D9BE9)
    ────────────────────────────────────────────────────────────── */
 .hero {
-  background: var(--blue);
+  background: url('essenceDetailing/self.jpg') no-repeat center center;
+  background-size: cover;
   min-height: 100vh;
   padding-top: 58px;
   position: relative;
@@ -271,12 +272,12 @@ nav:not(.arch-bar) > * { flex-shrink: 0; }
 }
 .hero-eyebrow .line {
   width: 34px; height: 1.5px;
-  background: rgba(255,255,255,.60);
+  background: rgba(0,0,0,.60);
 }
 .hero-eyebrow span {
   font-size: 0.75rem; font-weight: 600;
   letter-spacing: .15em; text-transform: uppercase;
-  color: rgba(255,255,255,.82);
+  color: #333;
 }
 
 .hero-title {
@@ -290,18 +291,19 @@ nav:not(.arch-bar) > * { flex-shrink: 0; }
   align-items: flex-start; /* 왼쪽 정렬 */
   gap: 0; /* 띄어쓰기 없이 바로 밑에 붙음 */
 }
-.hero-title .ko     { display: inline; color: #fff; }
+.hero-title .ko     { display: inline; color: #111; }
 .hero-title .accent {
   display: inline;
-  color: rgba(255,255,255,.10);
-  -webkit-text-stroke: 2px rgba(255,255,255,.85);
+  color: rgba(0,0,0,.05);
+  -webkit-text-stroke: 2px #111;
 }
 
 .hero-desc {
   font-size: 1.15rem;
-  color: rgba(255,255,255,.88);
+  color: #222;
   line-height: 1.85;
   margin-bottom: 44px;
+  font-weight: 600;
 }
 
 .hero-meta {
@@ -309,7 +311,7 @@ nav:not(.arch-bar) > * { flex-shrink: 0; }
   align-items: flex-start;
   gap: 36px;
   padding-top: 26px;
-  border-top: 1px solid rgba(255,255,255,.22);
+  border-top: 1px solid rgba(0,0,0,.22);
 }
 .hero-meta-item {
   display: flex;
@@ -319,11 +321,11 @@ nav:not(.arch-bar) > * { flex-shrink: 0; }
 .hero-meta-item .label {
   font-size: 0.72rem; font-weight: 600;
   letter-spacing: .12em; text-transform: uppercase;
-  color: rgba(255,255,255,.52);
+  color: #555;
 }
 .hero-meta-item .val {
   font-size: 1.05rem; font-weight: 700;
-  color: #fff;
+  color: #111;
   white-space: nowrap;
 }
 
