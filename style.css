@@ -78,6 +78,8 @@ ul  { list-style: none; }
   will-change: transform;
 }
 
+/* 디테일링세차 컨셉 cursor*/
+
 /* 1. 중앙 점: 항상 흰색 빛 */
 .cursor {
   width: 4px;
@@ -105,6 +107,7 @@ ul  { list-style: none; }
   transition: transform 0.1s ease-out; /* 움직임 부드럽게 */
 }
 
+/* ------------디테일링세차 컨셉 cursor 끝-------------- */
 
 /* ── INTERSECTION OBSERVER 기본 숨김 ───────────────────────── */
 .fade-up, .sol-card, .pain-card,
@@ -279,13 +282,13 @@ nav:not(.arch-bar) > * { flex-shrink: 0; }
 .hero-title {
   font-family: var(--font-d);
   font-size: clamp(3.2rem,5.5vw,5.4rem);
-  line-height: 1.06;
+  line-height: 1.1; /* 줄간격 조정 */
   letter-spacing: -.03em;
   margin-bottom: 26px;
   display: flex;
-  align-items: baseline;
-  gap: 0.25em;
-  flex-wrap: wrap;
+  flex-direction: column; /* 세로 배치 */
+  align-items: flex-start; /* 왼쪽 정렬 */
+  gap: 0; /* 띄어쓰기 없이 바로 밑에 붙음 */
 }
 .hero-title .ko     { display: inline; color: #fff; }
 .hero-title .accent {
@@ -328,29 +331,41 @@ nav:not(.arch-bar) > * { flex-shrink: 0; }
 .phone-wrap {
   position: absolute;
   filter: drop-shadow(0 28px 56px rgba(0,0,0,.55));
-  transition: filter .4s ease;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), filter 0.5s ease;
+  transform-style: preserve-3d;
+  cursor: pointer;
 }
 .phone-wrap:first-child {
   left: 4%;
   top: 50%;
   z-index: 2;
-  animation: floatA 6s ease-in-out infinite;
+  transform: translateY(-50%);
 }
 .phone-wrap.tilt {
   left: 46%;
   top: 50%;
   z-index: 1;
   opacity: .88;
-  animation: floatB 7s ease-in-out infinite 1.2s;
+  transform: translateY(calc(-50% + 8px)) rotate(6deg);
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), filter 0.5s ease, opacity 0.5s ease;
 }
-@keyframes floatA { 0%,100% { transform:translateY(-50%); } 50% { transform:translateY(calc(-50% - 16px)); } }
-@keyframes floatB { 0%,100% { transform:translateY(calc(-50% + 8px)) rotate(6deg); } 50% { transform:translateY(calc(-50% - 8px)) rotate(6deg); } }
 .phone-wrap img { width: 500px; border-radius: 38px; }
-.phone-wrap:hover { filter: drop-shadow(0 36px 72px rgba(19,184,159,.42)); }
 
-/* lazy loading */
-.hero img          { opacity: 0; transition: opacity .6s var(--ease); }
-.hero img.loaded   { opacity: 1; }
+/* 3D Hover Effects */
+.phone-wrap:hover {
+  filter: drop-shadow(-10px 40px 70px rgba(19, 184, 159, 0.45));
+  z-index: 10;
+}
+.phone-wrap:first-child:hover {
+  transform: translateY(-50%) perspective(1200px) rotateX(4deg) rotateY(-8deg) scale(1.05);
+}
+.phone-wrap.tilt:hover {
+  transform: translateY(calc(-50% + 8px)) perspective(1200px) rotateX(4deg) rotateY(-8deg) rotate(2deg) scale(1.05);
+  opacity: 1;
+}
+
+/* lazy loading (제거됨) */
+.hero img { opacity: 1; transition: none; }
 
 /* ──────────────────────────────────────────────────────────────
    ARCH BAR
@@ -541,6 +556,7 @@ nav:not(.arch-bar) > * { flex-shrink: 0; }
   gap: 20px;
 }
 .persona-card {
+  position: relative;
   display: flex;
   flex-direction: column;    /* 아바타 위, 텍스트 아래 */
   align-items: flex-start;
@@ -553,13 +569,24 @@ nav:not(.arch-bar) > * { flex-shrink: 0; }
   transition: transform .28s var(--ease), border-color .28s ease,
               background .28s ease, box-shadow .28s ease;
 }
+.persona-card img {
+  position: absolute;
+  right: 100%; /* 박스 왼쪽에 완전히 벗어나게 배치 */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100% !important;  /* 이미지 가로 크기를 박스 너비와 똑같이 큼직하게 키움 */
+  height: auto !important; /* 비율을 유지하여 깨지거나 찌그러지지 않게 함 */
+  margin-right: 20px; /* 박스와의 간격 */
+  border-radius: 12px; /* 깔끔한 둥글기 적용 */
+  box-shadow: -4px 8px 24px rgba(0,0,0,0.3);
+  z-index: 5;
+}
 .persona-card:hover {
   transform: translateY(-6px);
   border-color: var(--border-hl);
   background: var(--teal-soft);
   box-shadow: 0 18px 44px rgba(0,0,0,.44);
 }
-
 
 /* 페르소나 이야기 */
 .persona-avatar {
@@ -597,8 +624,6 @@ nav:not(.arch-bar) > * { flex-shrink: 0; }
 }
 
 /*------------- 페르소나 이야기 끝 ----------------*/
-
-
 
 .persona-card:hover .persona-avatar {
   transform: scale(1.14) rotate(-5deg);
@@ -658,6 +683,29 @@ nav:not(.arch-bar) > * { flex-shrink: 0; }
   position: absolute; top: -20px; left: 0;
   font-size: 0.65rem; font-weight: 700;
   letter-spacing: .10em; color: var(--teal);
+}
+
+/* Chat Bubble Ripple Hover Effects */
+@keyframes ripple-user {
+  0% { box-shadow: 0 0 0 0 rgba(61,155,233, 0.6); }
+  100% { box-shadow: 0 0 0 20px rgba(61,155,233, 0); }
+}
+@keyframes ripple-ai {
+  0% { box-shadow: 0 0 0 0 rgba(19,184,159, 0.6); }
+  100% { box-shadow: 0 0 0 20px rgba(19,184,159, 0); }
+}
+.chat-bubble {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.chat-bubble:hover {
+  transform: translateY(-2px);
+}
+.chat-bubble.user:hover {
+  animation: ripple-user 0.8s ease-out forwards;
+}
+.chat-bubble.ai:hover {
+  animation: ripple-ai 0.8s ease-out forwards;
 }
 
 .ai-text {
