@@ -918,7 +918,17 @@ nav:not(.arch-bar) > * { flex-shrink: 0; }
   gap: 40px;
   flex-wrap: wrap;
   min-width: 0;
+  background: url('essenceDetailing/uiux.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
 }
+.process-left::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: rgba(13, 17, 23, 0.7); /* 어두운 오버레이 */
+  z-index: 0;
+}
+.process-left > * { position: relative; z-index: 1; }
 .duration-card {
   flex: 0 0 280px;
   padding: 26px;
@@ -994,7 +1004,17 @@ nav:not(.arch-bar) > * { flex-shrink: 0; }
   padding: 72px var(--side-pad) 100px;
   display: flex;
   flex-direction: column;
+  background: url('essenceDetailing/5784989.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
 }
+.process-right::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: rgba(13, 17, 23, 0.7); /* 어두운 오버레이로 텍스트 가독성 확보 */
+  z-index: 0;
+}
+.process-right > * { position: relative; z-index: 1; }
 .process-eyebrow { font-size: 0.75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--teal); margin-bottom: 14px; }
 .process-title { font-family: var(--font-d); font-size: clamp(2.2rem,4vw,3.4rem); letter-spacing: -.03em; color: var(--white); line-height: 1.10; margin-bottom: 56px; }
 
