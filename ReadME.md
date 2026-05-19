@@ -1,246 +1,229 @@
-# 🚗 Auto Detailing Platform
+# 🚘 세차의 정석 | Auto Detailing UX Portfolio
 
-### 자동차 디테일링 서비스 웹 플랫폼
-
-> 사용자와 디테일링 업체를 연결하고, 서비스 소개·예약·상담·포트폴리오를 직관적으로 제공하는  
-> 현대적인 웹 기반 플랫폼입니다.
-
----
-
-## 📋 Project Overview
-
-**Auto Detailing**은 자동차 디테일링 서비스의 신뢰도와 접근성을 높이기 위해 제작된 웹 프로젝트입니다.
-
-기존 자동차 관리 업체들의 복잡하고 구식적인 인터페이스 대신, **깔끔한 레이아웃**과 **직관적인 사용자 경험(UI/UX)**을 중심으로 프리미엄 브랜드 웹사이트를 구현했습니다.
-
-**핵심 목표:**
-- ✅ 디테일링 업체의 브랜드 신뢰도 강화
-- ✅ 사용자 중심의 직관적인 UI/UX 설계
-- ✅ 반응형 웹 기반 모바일 최적화
-- ✅ 서비스 소개 및 상담 접근성 향상
-- ✅ 포트폴리오 중심의 비주얼 강조
+> AI 기반 스마트 세차 플랫폼 기획 프로젝트  
+> 초보 운전자도 전문가처럼 차량을 관리할 수 있도록 돕는  
+> UX 중심의 차량 관리 서비스입니다.
 
 ---
 
-## 🎯 Key Features
+## 🔗 Live Preview
 
-### 🏠 **메인 랜딩 페이지**
-- 브랜드 임팩트를 살린 Hero Section
-- 핵심 서비스 한눈에 보기
-- 시각적 강조 및 Call-to-Action (CTA) 버튼
+### 🌐 GitHub Pages
+https://wlsgns9607-blip.github.io/Auto_Detailing/
 
-### 🚘 **디테일링 서비스 소개**
-- 다양한 차량 관리 서비스 구성
-- 프리미엄 서비스 패키지 강조
-- Before/After 이미지 비교 영역
-- 상세한 서비스 설명 및 가격 정보
-
-### 📱 **반응형 웹 디자인**
-- 모바일 / 태블릿 / 데스크탑 완벽 대응
-- Flexbox & CSS Grid 기반 유연한 레이아웃
-- 터치 친화적 인터페이스
-
-### 🎨 **현대적 UI/UX 설계**
-- 미니멀하면서도 프리미엄한 디자인 톤
-- 직관적인 사용자 흐름 구성
-- 사용자 집중도를 높인 인터페이스
-- 부드러운 애니메이션 및 트랜지션 효과
-
-### 📞 **상담 및 예약 시스템**
-- 간편한 상담 신청 폼
-- 예약 일정 관리 기능
-- 사용자 정보 수집 및 관리
-
-### 🎬 **포트폴리오 갤러리**
-- 고품질 프로젝트 이미지 전시
-- 카테고리별 서비스 포트폴리오
-- 이미지 필터 및 검색 기능
+### 📂 GitHub Repository
+https://github.com/wlsgns9607-blip/Auto_Detailing
 
 ---
 
-## 🛠 Tech Stack
+# 📌 Project Overview
 
-| 분야 | 기술 스택 |
-|------|---------|
-| **Frontend** | HTML5, CSS3, JavaScript (Vanilla) |
-| **Layout** | Flexbox, CSS Grid |
-| **Design** | Responsive Web Design, Modern UI |
-| **Tools** | Git, GitHub, VS Code |
-| **Browser Support** | Chrome, Firefox, Safari, Edge |
+“세차의 정석”은  
+세차 경험이 부족한 사용자들도  
+도장면 손상 없이 효율적으로 차량을 관리할 수 있도록 기획한  
+AI 기반 차량 관리 플랫폼입니다.
+
+단순 세차 정보 제공이 아닌,
+
+- 실시간 세차 환경 분석
+- 노터치 세차장 매칭
+- AI 세차 문답
+- 세차 루틴 추천
+- 전문가 노하우 기반 가이드
+
+를 통해 차량 관리의 진입 장벽을 낮추는 것을 목표로 했습니다.
 
 ---
 
-## 📂 Project Structure
+# 🎯 Why This Project?
 
-```
+디테일링 매장 실무 경험을 바탕으로  
+실제 고객들이 겪는 문제를 발견했습니다.
+
+### 사용자 문제점
+
+- 주변 세차장을 찾기 어렵다
+- 잘못된 세차 방식으로 차량이 손상된다
+- 어떤 용품이 좋은지 판단하기 어렵다
+- 전문가 조언을 받기 어렵다
+
+이 문제를 해결하기 위해  
+AI와 위치 기반 서비스를 결합한 UX 플랫폼을 기획했습니다.
+
+---
+
+# 👥 Target Persona
+
+| Persona | Needs |
+|---|---|
+| 🚗 신차 오너 | 도장면 손상 없는 세차 방법 |
+| 👵 중장년 운전자 | 무릎 부담 없는 노터치 세차 |
+| 🧼 셀프세차 입문자 | 가성비 루틴 및 전문가 조언 |
+| 🛒 차량 관리 관심층 | 용품 추천 및 비교 |
+
+---
+
+# ✨ Core Features
+
+## 01. 실시간 세차 지수
+날씨 및 미세먼지 데이터를 기반으로  
+오늘 세차 적합도를 실시간 분석합니다.
+
+## 02. 세차장 스포팅 맵
+주변 노터치 / 셀프 세차장을 탐색하고  
+사용자 상황에 맞게 추천합니다.
+
+## 03. AI 세차 솔루션
+세차 관련 질문을 AI가 즉각 분석하여  
+실무 기반 답변을 제공합니다.
+
+## 04. 가성비 세차 루틴
+최소 비용으로 최대 효율을 내는  
+맞춤형 세차 루틴을 제공합니다.
+
+## 05. 도장면 리스크 관리
+잘못된 세차 습관을 예방하기 위한  
+전문가 가이드를 제공합니다.
+
+## 06. 디지털 차량 관리 히스토리
+차량 관리 이력을 저장하고  
+장기적으로 분석할 수 있습니다.
+
+---
+
+# 🛠 Tech Stack
+
+| Category | Skills |
+|---|---|
+| Frontend | HTML5, CSS3, JavaScript |
+| UI/UX | Figma, Stitch |
+| AI Planning | Gemini AI, Claude |
+| Backend | Firebase |
+| Deployment | GitHub Pages |
+| Version Control | Git & GitHub |
+
+---
+
+# 🎨 Design Concept
+
+### Premium Car Care Experience
+
+이 프로젝트는 단순 자동차 앱이 아닌  
+“프리미엄 차량 관리 브랜드” 경험을 목표로 디자인했습니다.
+
+### Design Keywords
+
+- Dark Modern UI
+- Premium Branding
+- Luxury Mood
+- Minimal Layout
+- Emotional UX
+
+---
+
+# 🧠 AI Collaboration
+
+이 프로젝트는 다양한 AI와 협업하여 제작되었습니다.
+
+| AI Tool | Usage |
+|---|---|
+| Gemini AI | 페르소나 및 서비스 기획 |
+| Claude | 색상 컨셉 및 디자인 방향 |
+| Google AI Studio | 개발 보조 |
+| ChatGPT | UX 구조 및 코드 개선 |
+
+---
+
+# 📱 Main Screens
+
+## 🏠 Main Dashboard
+사용자 차량 상태 및 세차 추천 정보를 제공
+
+## 🤖 AI Solution Q&A
+세차 관련 질문을 AI 기반으로 해결
+
+## 🗺️ Car Wash Matching
+주변 세차장 위치 및 유형 추천
+
+---
+
+# ⏳ Production Process
+
+## Week 01
+- 시장 조사
+- UX 문제 정의
+- 페르소나 기획
+- 핵심 기능 설계
+
+## Week 01
+- 와이어프레임 제작
+- UI 디자인
+- 프로토타입 구성
+
+## Week 02
+- Firebase 연동
+- AI 기능 구현
+- 인터랙션 개발
+
+## Week 02
+- 테스트
+- 수정 작업
+- 포트폴리오 완성
+
+---
+
+# 📂 Folder Structure
+
+```bash
 Auto_Detailing/
 │
-├── index.html              # 메인 페이지
-├── style.css              # 스타일시트 (반응형 디자인)
-├── script.js              # JavaScript 로직
-│
-├── essenceDetailing/       # 서브 폴더 (추가 페이지/리소스)
-│   ├── portfolio.html
-│   ├── service.html
+├── index.html
+├── style.css
+├── script.js
+├── essenceDetailing/
+│   ├── main.png
+│   ├── AI.png
+│   ├── carw.png
 │   └── ...
-│
-├── images/                # 이미지 파일 디렉토리
-│   ├── hero/
-│   ├── portfolio/
-│   ├── services/
-│   └── ...
-│
-└── README.md             # 프로젝트 문서
+└── README.md
 ```
 
 ---
 
-## 🚀 Getting Started
+# 📚 What I Learned
 
-### 설치 및 실행
+이번 프로젝트를 통해 다음 역량을 강화했습니다.
 
-1. **저장소 클론**
-   ```bash
-   git clone https://github.com/wlsgns9607-blip/Auto_Detailing.git
-   cd Auto_Detailing
-   ```
-
-2. **브라우저에서 실행**
-   - `index.html` 파일을 브라우저에서 직접 열기
-   - 또는 Live Server 사용:
-   ```bash
-   # VS Code Live Server 확장 사용
-   # 또는 Python 로컬 서버
-   python -m http.server 8000
-   ```
-
-3. **브라우저 접속**
-   ```
-   http://localhost:8000
-   ```
+- UX 기반 문제 해결 사고
+- 서비스 기획 프로세스
+- 사용자 중심 인터페이스 설계
+- 반응형 웹 퍼블리싱
+- AI 협업 기반 기획 방식
+- Firebase 구조 이해
+- 인터랙션 중심 UI 구현
 
 ---
 
-## 🎨 Design Highlights
+# 🚀 Future Improvements
 
-### 색상 팔레트
-- **Primary**: 현대적 검정/흰색 조합
-- **Accent**: 프리미엄 골드/실버 톤
-- **Background**: 클린한 그레이스케일
-
-### 타이포그래피
-- 헤더: 굵은 산세리프 폰트 (임팩트)
-- 본문: 가독성 높은 산세리프 폰트
-- 라인 하이트: 1.6 이상 (가독성 최적화)
-
-### 반응형 브레이크포인트
-```css
-/* Mobile: 320px ~ 479px */
-/* Tablet: 480px ~ 767px */
-/* Desktop: 768px 이상 */
-```
+- 실제 예약 시스템 구축
+- 사용자 차량 데이터 분석
+- 커뮤니티 기능 추가
+- 세차 용품 추천 AI 강화
+- 실시간 세차장 혼잡도 기능
+- 관리자 시스템 개발
 
 ---
 
-## 📊 Performance & Optimization
+# 👨‍💻 Developer
 
-- ✅ **이미지 최적화**: 웹용 이미지 압축 및 lazy loading
-- ✅ **CSS 압축**: 최소화된 스타일시트
-- ✅ **JavaScript 최적화**: 불필요한 코드 제거
-- ✅ **SEO 최적화**: 의미 있는 HTML 구조 (Semantic HTML)
-- ✅ **접근성**: WCAG 가이드라인 준수
+## 조진훈 | UX Planning Portfolio
 
----
-
-## 💡 Key Implementation Details
-
-### 1. **반응형 디자인**
-```css
-/* 예: Flexbox를 활용한 유연한 레이아웃 */
-.service-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-/* 태블릿 이상 */
-@media (min-width: 768px) {
-  .service-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-```
-
-### 2. **JavaScript 인터랙션**
-- 스무스 스크롤 네비게이션
-- 동적 콘텐츠 로딩
-- 폼 검증 및 제출
-- 갤러리 필터링
-
-### 3. **사용자 경험**
-- 명확한 Call-to-Action 버튼
-- 빠른 로딩 속도
-- 직관적인 네비게이션
-- 모바일-우선 접근
+### GitHub
+https://github.com/wlsgns9607-blip
 
 ---
 
-## 📈 Future Enhancements
+# 📄 License
 
-- [ ] 백엔드 연동 (Node.js / Python)
-- [ ] 데이터베이스 통합 (MongoDB / MySQL)
-- [ ] 사용자 인증 시스템
-- [ ] 결제 게이트웨이 통합
-- [ ] 실시간 상담 채팅
-- [ ] 고급 분석 대시보드
-- [ ] PWA (Progressive Web App) 지원
-- [ ] 다국어 지원 (i18n)
-
----
-
-## 🔧 Browser Compatibility
-
-| 브라우저 | 지원 |
-|---------|------|
-| Chrome | ✅ 최신 버전 |
-| Firefox | ✅ 최신 버전 |
-| Safari | ✅ 최신 버전 |
-| Edge | ✅ 최신 버전 |
-| IE 11 | ❌ 미지원 |
-
----
-
-## 📝 License
-
-이 프로젝트는 개인 포트폴리오 프로젝트입니다.  
-상업적 목적의 사용은 제한됩니다.
-
----
-
-## 👨‍💻 Developer
-
-**GitHub**: [@wlsgns9607-blip](https://github.com/wlsgns9607-blip)
-
----
-
-## 📞 Contact & Support
-
-- 📧 이메일: [이메일 주소 입력]
-- 🌐 포트폴리오: [포트폴리오 링크]
-- 💼 LinkedIn: [LinkedIn 링크]
-
----
-
-## 🙏 Acknowledgments
-
-- 현대적인 웹 디자인 트렌드 참고
-- 사용자 경험(UX) 최적화 원칙 적용
-- 오픈소스 커뮤니티의 지식 활용
-
----
-
-<div align="center">
-
-**⭐ 이 프로젝트가 도움이 되었다면 Star를 눌러주세요!**
-
-</div>
+This project is created for portfolio and educational purposes.
