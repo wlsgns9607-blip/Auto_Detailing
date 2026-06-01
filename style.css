@@ -221,6 +221,27 @@ nav:not(.arch-bar) > * { flex-shrink: 0; }
   white-space: nowrap;
 }
 
+.nav-site-link {
+  background: #0d1117;
+  color: #13B89F !important;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-weight: 700 !important;
+  font-size: 0.76rem !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+.nav-site-link:hover {
+  background: #111820;
+  color: #fff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.nav-site-link::after {
+  display: none !important; /* Remove line animation */
+}
+
 /* ──────────────────────────────────────────────────────────────
    HERO  (배경 #3D9BE9)
    ────────────────────────────────────────────────────────────── */
