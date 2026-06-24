@@ -1011,7 +1011,7 @@ nav:not(.arch-bar) > * { flex-shrink: 0; }
 .duration-value span { font-family: var(--font-b); font-size: 0.80rem; color: var(--muted); letter-spacing: .02em; display: block; margin-top: 4px; }
 .progress-track { display: flex; align-items: center; gap: 5px; }
 .progress-seg { flex: 1; height: 3px; border-radius: 100px; background: var(--teal); }
-.progress-seg:nth-child(4) { opacity: .35; }
+/* All 4 segments are fully active to show completion of the 4-week period */
 
 .tool-row {
   flex: 1;
