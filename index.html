@@ -184,6 +184,49 @@
     </div>
 </article>
 
+<!-- SECTION: AI VISION UX FLOW -->
+<section class="ai-vision-flow" style="padding: 100px 5%; margin: 0 20px 100px 20px; border-radius: 40px; background-color: #1a222c; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
+    <div class="sec-eyebrow" style="margin-bottom: 30px;">
+        <div class="dot" style="background-color: #ef4444;"></div>
+        <span style="color: #ef4444; font-weight: 700; letter-spacing: 1px;">문제점 : 차의 오염도마다 세차방법을 제시 못함</span>
+    </div>
+    <h2 style="color: white; font-size: 2.5rem; margin-bottom: 50px; font-weight: 900; line-height: 1.3;">해결방법 제시<br><span style="color: #1ea08a; font-size: 1.5rem;">AI UX FLOW (AI 진단 & 맞춤 솔루션)</span></h2>
+    
+    <div class="sol-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        
+        <!-- Step 1 -->
+        <div class="sol-card fade-up" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 40px; border-radius: 20px;">
+            <div class="sol-num" style="color: #1ea08a; font-size: 1.5rem; margin-bottom: 10px; font-weight: 900;">01</div>
+            <h4 style="color: white; font-size: 1.4rem; margin-bottom: 15px; font-weight: 700;">촬영 및 스캔</h4>
+            <p style="color: #d1d5db; line-height: 1.6; font-size: 1rem;">고객이 앱 내 카메라로 차량의 전면, 후면, 측면 또는 오염된 부위를 직접 촬영합니다.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="sol-card fade-up" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 40px; border-radius: 20px;">
+            <div class="sol-num" style="color: #1ea08a; font-size: 1.5rem; margin-bottom: 10px; font-weight: 900;">02</div>
+            <h4 style="color: white; font-size: 1.4rem; margin-bottom: 15px; font-weight: 700;">AI 오염도 분석</h4>
+            <p style="color: #d1d5db; line-height: 1.6; font-size: 1rem;">AI 비전 모델이 이미지 속의 흙먼지, 타르, 새 똥, 워터스팟(물때) 등을 인식하여 오염도를 <strong>상/중/하</strong> 단계로 판별합니다.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="sol-card fade-up" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 40px; border-radius: 20px; grid-column: 1 / -1;">
+            <div class="sol-num" style="color: #1ea08a; font-size: 1.5rem; margin-bottom: 10px; font-weight: 900;">03</div>
+            <h4 style="color: white; font-size: 1.4rem; margin-bottom: 20px; font-weight: 700;">맞춤 가이드 제시</h4>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 280px; background: rgba(0,0,0,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #1ea08a;">
+                    <strong style="color: #1ea08a; display: block; margin-bottom: 12px; font-size: 1.1rem;">오염도 하/중</strong>
+                    <p style="color: #b0bccc; font-size: 0.95rem; line-height: 1.6; margin: 0;">"예상 세차 시간은 약 25분입니다.<br>고압수 1분 ➔ 카샴푸 미트질 ➔ 휠 세척 순서로 진행해 보세요."와 같이 상세 가이드와 타이머를 제공합니다.</p>
+                </div>
+                <div style="flex: 1; min-width: 280px; background: rgba(0,0,0,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #ef4444;">
+                    <strong style="color: #ef4444; display: block; margin-bottom: 12px; font-size: 1.1rem;">오염도 상 (또는 고객 해결 불가 영역)</strong>
+                    <p style="color: #b0bccc; font-size: 0.95rem; line-height: 1.6; margin: 0;">"오염도가 높아 개인 세차로는 도장면이 손상될 수 있습니다.<br>주변의 디테일링 세차장 상담을 받아보시는 것을 추천합니다."라며 근처 전문 매장 연계 화면을 띄웁니다.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 <!-- SECTION 02.5: USER FLOW -->
 <section class="user-flow-section" style="padding: 100px 5%; background-color: #111820; text-align: center; margin: 0 20px 100px 20px; border-radius: 40px; border: 1px solid rgba(255,255,255,0.05); box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
     <div class="sec-eyebrow" style="justify-content: center; margin-bottom: 30px;">
@@ -337,10 +380,16 @@
             <div class="sol-tag" style="background: #1ea08a; color: white; border: none; display: inline-block; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">커뮤니티 매칭</div>
         </div>
         <div class="sol-card" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 40px; border-radius: 20px;">
-            <div class="sol-num" style="color: #1ea08a; font-size: 1.5rem; margin-bottom: 10px; font-weight: 900;">B2B</div>
-            <h4 style="color: white; font-size: 1.4rem; margin-bottom: 15px; font-weight: 700;">오프라인 전문 샵 다이렉트 예약</h4>
-            <p style="color: #d1d5db; line-height: 1.6; margin-bottom: 20px; font-size: 1rem;">일반인 선에서 해결 불가능한 특수 오염(토사물 등)이나 스크래치(스월마크) 발생 시, 지역 내 '실내 크리닝 전문점' 또는 '광택 디테일링 전문점'으로 즉시 견적을 요청하고 예약합니다.</p>
-            <div class="sol-tag" style="background: #1ea08a; color: white; border: none; display: inline-block; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">O2O 예약 수수료</div>
+            <div class="sol-num" style="color: #1ea08a; font-size: 1.5rem; margin-bottom: 10px; font-weight: 900;">Monetization</div>
+            <h4 style="color: white; font-size: 1.4rem; margin-bottom: 15px; font-weight: 700;">전문 매장 중개 수익 모델</h4>
+            <p style="color: #d1d5db; line-height: 1.6; margin-bottom: 20px; font-size: 1rem;">오염도가 높은 차량을 판별하여, 지역 내 '디테일링 세차장'에 매칭해 주면서 중개 수수료를 받거나 타겟팅 광고를 유치하는 비즈니스 모델로 확장합니다.</p>
+            <div class="sol-tag" style="background: #1ea08a; color: white; border: none; display: inline-block; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">중개 수수료 & 광고</div>
+        </div>
+        <div class="sol-card" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 40px; border-radius: 20px;">
+            <div class="sol-num" style="color: #1ea08a; font-size: 1.5rem; margin-bottom: 10px; font-weight: 900;">Commerce</div>
+            <h4 style="color: white; font-size: 1.4rem; margin-bottom: 15px; font-weight: 700;">세차 용품 커머스 연계</h4>
+            <p style="color: #d1d5db; line-height: 1.6; margin-bottom: 20px; font-size: 1rem;">AI 오염도 분석 결과에 따라 "지금 차량에는 철분 제거제가 필요합니다"라며 맞춤형 진단을 내리고, 관련 세차 용품 구매 링크로 연결해 직접적인 매출을 유도합니다.</p>
+            <div class="sol-tag" style="background: #1ea08a; color: white; border: none; display: inline-block; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">용품 판매 & 큐레이션</div>
         </div>
         <div class="sol-card" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 40px; border-radius: 20px;">
             <div class="sol-num" style="color: #1ea08a; font-size: 1.5rem; margin-bottom: 10px; font-weight: 900;">In-Car</div>
